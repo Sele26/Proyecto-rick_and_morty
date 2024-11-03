@@ -1,0 +1,41 @@
+/* Imagen de fondo y centrado vertical y horizontal  */
+.backgroundImage {
+    height: 100vh; /*la altura cubre toda la ventana*/
+   background-image: url("/public/image/fondo1.jpg");
+    background-size: cover;
+   background-position: center; /*la imagen cubre toda el area*/
+   display: flex;
+   justify-content: center; /*centra horizontalmente*/
+   align-items: center; /*centra verticalmente*/
+flex-direction: column;
+}
+/* Estilo básico para el título */
+.animatedTitle {
+    font-family: "Caveat", cursive;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style : normal;
+    font-size: 65px;
+    color: white;
+    margin:20px 0;
+    text-align: center;
+
+/* Estilos para el borde (stroke) del texto */
+-webkit-text-stroke: 2px #0c0909; /* Borde de 2px de grosor en rojo */
+color: #FFFFFF; /* Relleno del texto en blanco */
+
+/* Otras propiedades opcionales */
+text-shadow: 2px 2px 4px rgba(37, 1, 34, 0.3); /* Sombras suaves para el texto */
+}
+
+.parrafo{
+   font-family: "Bebas Neue", sans-serif;
+font-weight: 400;
+font-style: normal;
+font-size: 30px;
+margin: 0;
+text-align: center;
+}
+
+
+

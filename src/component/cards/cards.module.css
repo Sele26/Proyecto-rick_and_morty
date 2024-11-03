@@ -1,0 +1,107 @@
+.cardsContainer {
+    display:flex;
+    overflow-x:hidden; /*oculta el overflow horizontal para que las flechas controlen el scroll*/
+    scroll-behavior: smooth; /* Desplazamiento suave */
+    padding: 20px 0;
+    gap: 15px;
+    margin: 0 auto;
+    position: relative;
+    width: 90%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.cardWrapper {
+    display: inline-block; /*cada tarjeta se alinea horizontalmente*/
+    margin-right: 20px; /* espacio entre tarjetas*/
+}
+
+/*estilos para lo botones de flechas*/
+.arrowButton{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #B53389;
+    color:white;
+    border: none;
+    padding: 15px;
+    border-radius: 50%;
+    cursor:pointer;
+    z-index: 10;
+    font-size: 34px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    opacity: 0.8; 
+}
+
+.leftArrow{
+    left: 10px; /*Flechas izquerdas*/
+}
+
+.rightArrow{
+    right: 10px; /*flechas derechas*/
+}
+
+.arrowButon:hover{
+    background-color: #9966cc;/*cambio de color al hover*/
+    transform: scale(1.1); /*aumneta ligeramente al pasar el mouse*/
+}
+/*efecto click en la flecha*/
+.arrowButon:active{
+    background-color: #7a519d;
+    transform: scale(0.95);
+
+}
+
+
+/*fondo*/
+.backgroundImage {
+    background-image: url("/public/image/fondorick.jpg");
+    background-size: cover;
+   background-position: center; /*la imagen cubre toda el area*/
+   min-height: 100vh;/*se asegura que cubra la altura completa*/
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   position: relative;
+   padding: 20px;
+}
+
+/*Estilos basicos para la card*/
+.card{
+    width: 200px; /*Tamaño de la card*/
+    height: 200px; /*Altura de la card*/
+    background-color: #f0f0f0; /*color de fondo de la card*/
+    border-radius: 50%;/*hace que la card sea redonda*/
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.2);/*sombra para darle un poco de profundidas*/
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /*transicion suave para el efecto de salto*/
+    cursor: pointer;
+    margin: 20px;
+
+}
+
+.card:hover{
+    transform: scale(1.05);
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;/*ajusta la imagen para que cubra toda la tarjeta */
+    border-radius:50%; /*hace que la imagen tambien sea redonda*/
+}
+
+.card h2{
+    font-size: 18px;
+    color: #B53389;
+    margin: 10px 0 0 0;
+    text-align: center;
+    font-weight: bold;
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-radius: 10px;
+}

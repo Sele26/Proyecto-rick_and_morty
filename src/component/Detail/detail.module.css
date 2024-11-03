@@ -1,0 +1,55 @@
+/*fondo*/
+.backgroundImage {
+  background-image: url("/public/image/fondorick.jpg");
+  background-size: cover;
+ background-position: center; /*la imagen cubre toda el area*/
+ min-height: 100vh;/*se asegura que cubra la altura completa*/
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ position: relative;
+ padding: 20px;
+}
+
+/* Contenedor principal que organiza los detalles y la imagen en columnas */
+.detailContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* Espacio entre la imagen y los detalles */
+    padding: 20px;
+   height: 100vh;
+    /* Fondo claro para el contenedor */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  }
+  
+  /* Estilo para el contenedor de los detalles */
+  .detailText {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    background-color: #B53389; /* Color del nav */
+    color: white; /* Texto en blanco */
+    padding: 40px;
+    border-radius: 15px;
+    margin-right: 20px;
+    width: 40%;
+   
+  }
+  
+  /* Estilo para la imagen */
+  .detailImage {
+   width: 50%;
+   height: auto;
+   border-radius: 15px;
+   object-fit: cover;
+   box-shadow: 0px 4px 10px rgba (0,0,0,0.1);
+  }
+  
+  /* Estilo para los títulos y detalles dentro del texto */
+  .detailText h2, .detailText p {
+    margin: 10px 0;
+  }
+  

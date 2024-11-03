@@ -1,0 +1,51 @@
+/*estilo de nav*/
+.navbar{
+    position:fixed; /*esto hace que el nav siempre este visible en la parte superor*/
+    top:0;
+    width: 100%;/*ocupa todo el ancho de la ventana */
+    background-color:rgba(255, 255, 255, 0.654) ; /*color de fondo blanco con un poco de transparencia*/
+    z-index: 1000;/*asegura que este sobre el contenido*/
+    padding: 20px 40px;
+    border-radius: 20px; /*bordes redondeados*/
+    box-shadow: 0px 2px 10px rgba(0,0,0,0.2); /*sombra suave para el rectangulo*/
+    display:flex; /*activamos flex box dentro del navbar*/
+    flex-direction: column;/*coloca los elemntos en columna dentro del navbar*/
+    align-items:center;/*centra los botones dentro del navbar*/
+}
+
+
+
+/* Contenedor de los botones */
+.navButtons {
+    display:flex;
+    gap: 30px; /*espacio entre los botones*/
+}
+
+/*Estilo de los buttons*/
+
+.navButton {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    background-color:#B53389;/*COLOR DE FONDO DEL BOTON*/
+    color:black;/*color de texto*/
+    border: none;
+    padding: 10px 20px; /*espaciado interno*/
+    border-radius: 5px; /*bordes redondeados*/
+    font-size: 20px; /*tamaño de fuentes*/
+    cursor: pointer; /*mostrar cursor de puntero en hover*/
+    box-shadow: 0px 4px 6px rgba(0,0,0,0.1); /*sombra suave*/
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /*animacion suave en hover*/
+    text-decoration:none;
+}
+
+/* Efecto al pasar el cursor sobre el button */
+.navButton:hover {
+    background-color:#9966CC; /*cambia el fondoal pasar el mouse*/
+    box-shadow: 0px 6px 10px rgba(0,0,0,0.2); /*aumenta la sombra en hover*/
+    text-decoration: none;
+}
+
+/* hover : cuando se pasa el cursos sobre el boton , el color de fono cambia a un color diferente , y la sombra se hace mas pronunciada lo que resalta el boton. */
+

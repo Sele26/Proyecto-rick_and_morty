@@ -1,0 +1,42 @@
+/*Estilos basicos para la card*/
+.card{
+    width: 200px; /*Tamaño de la card*/
+    height: 300px; /*Altura de la card*/
+    background-color: #f0f0f0; /*color de fondo de la card*/
+    border-radius: 15px;/*hace que la card sea redonda*/
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.1);/*sombra para darle un poco de profundidas*/
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /*transicion suave para el efecto de salto*/
+    cursor: pointer;
+    margin: 20px;
+
+}
+
+.card:hover{
+    transform: scale(1.05);
+}
+
+.card img {
+    width: 100%;
+    height: 60%;
+    object-fit: cover;/*ajusta la imagen para que cubra toda la tarjeta */
+    border-radius:50%; /*hace que la imagen tambien sea redonda*/
+}
+
+.card h2{
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.5rem;
+    color: #333;
+    margin: 10px 0 ;
+    text-align: center;
+    background-color: #B53389;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+}

@@ -1,0 +1,58 @@
+/*fondo*/
+.backgroundImage {
+    height: 100vh; /*la altura cubre toda la ventana*/
+   background-image: url("/public/image/fondorick.jpg");
+    background-size: cover;
+   background-position: center; /*la imagen cubre toda el area*/
+   display: flex;
+   justify-content: center; /*centra horizontalmente*/
+   align-items: center; /*centra verticalmente*/
+flex-direction: column;
+}
+
+/*Estilos para centrar el frm */
+.formContainer {
+    position: relative;
+    display: flex;/*flex box para centrar*/
+    justify-content: center;/*centra horizontalmente*/
+    align-items: center;/*centrar verticalmente */
+    height: 100vh;/*altura de la pagina completa*/
+   
+}
+
+
+.form {
+    background-color: white;/*fondo del formulario*/
+    padding: 20px; /*espaciado interno*/
+    border-radius: 10px;/*bordes redondeados*/
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.1);/*sombra suave*/
+    width: 100%;
+    max-width: 500px; /*ancho maximo del formulario*/
+    display: flex;
+    flex-direction: column;
+    gap:15px;/*espacio entre los elemntos del form*/
+}
+/*estilos de los campos del input*/
+.inputField {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/*estilos del boton */
+.submitButton{
+    background-color: #B53389;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+}
+
+.submitButton:hover{
+    background-color: #9966cc; /*cambia el color de fondo*/
+}
+
